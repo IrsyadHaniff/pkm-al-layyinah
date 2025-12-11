@@ -1,0 +1,180 @@
+body {
+  scroll-behavior: smooth;
+}
+
+/* Biar smooth perubahan background & warna */
+.transition-nav {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* NAVBAR awal: transparan */
+#mainNav {
+  background-color: transparent !important;
+}
+
+/* Saat discroll */
+#mainNav.scrolled {
+  background-color: white !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text putih di awal */
+#mainNav .nav-link,
+#mainNav .navbar-brand {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+/* Text hitam saat scroll */
+#mainNav.scrolled .nav-link,
+#mainNav.scrolled .navbar-brand {
+  color: black !important;
+}
+
+.hero-section {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-image: url("../img/disneyImage-PKM-AL-LAYYINAH.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.content-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.content-image img {
+  width: 100%; /* responsif */
+  max-width: 700px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic; /* gaya caption biasanya italic */
+}
+
+.content {
+  padding: 3rem 0;
+}
+
+.tujuan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tujuan h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.tujuan .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px; /* biar tidak terlalu melebar */
+}
+
+.tujuan .column {
+  width: 50%;
+  padding: 10px;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.dampak {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.dampak h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dampak .row {
+  display: flex;
+  justify-content: center; /* kolom tetap di tengah */
+}
+
+.dampak .column {
+  text-align: left; /* isi text left */
+}
+
+.harapan-card {
+  max-width: 900px;
+  margin: 40px auto; /* center horizontal */
+  background: rgba(0, 128, 0, 0.15); /* hijau transparan (soft) */
+  padding: 25px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(3px); /* efek kaca halus */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.harapan-card h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.harapan-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center; /* biar isi paragraf center */
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* Untuk tablet */
+@media (min-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+}
+
+/* Untuk laptop/desktop */
+@media (min-width: 992px) {
+  .hero-section {
+    height: 780px;
+    transform: translateY(-160px);
+  }
+}
