@@ -1,5 +1,9 @@
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
 }
 
 /* Biar smooth perubahan background & warna */
@@ -71,8 +75,8 @@ body {
 .content-image img {
   width: 100%; /* responsif */
   max-width: 700px;
-  border-radius: 10px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .image-caption {
@@ -175,6 +179,6 @@ footer {
 @media (min-width: 992px) {
   .hero-section {
     height: 780px;
-    transform: translateY(-160px);
+    margin-top: -160px;
   }
 }
